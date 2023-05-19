@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a0b5eb+0,ea52f8+0,0066ff+100 */ background: #a0b5eb; /* Old browsers */ background: -moz-linear-gradient(left, #a0b5eb 0%, #ea52f8 0%, #0066ff 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #a0b5eb 0%,#ea52f8 0%,#0066ff 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #a0b5eb 0%,#ea52f8 0%,#0066ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0b5eb', endColorstr='#0066ff',GradientType=1 ); /* IE6-9 */
+    margin:0;
+    padding: 0;
+    font-family: Roboto , sans-serif;
+}
+
+#myForm {
+    margin: 7% auto;
+    width: 60%;;
+}
+
+.myForm__input {
+    display:block;
+    width: 100%;
+    margin: 5px auto;
+    padding:10px;
+    outline: none;
+}
+
+.myForm__input:focus {
+    outline: 1px solid #000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.myForm__submit {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    margin: 0 auto;
+    background-color: #000;
+    color:white;
+    outline: none;
+}
+

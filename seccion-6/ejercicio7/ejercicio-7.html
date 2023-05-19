@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <ol>
+        <li>
+            <button class="subir">Subir</button>
+            <span>Argentina</span>
+            <button class="bajar">Bajar</button>
+        </li>
+        <li>
+            <button class="subir">Subir</button>
+            <span>Brasil</span>
+            <button class="bajar">Bajar</button>
+        </li>
+        <li>
+            <button class="subir">Subir</button>
+            <span>Chile</span>
+            <button class="bajar">Bajar</button>
+        </li>
+        <li>
+            <button class="subir">Subir</button>
+            <span>Uruguay</span>
+            <button class="bajar">Bajar</button>
+        </li>
+        <li>
+            <button class="subir">Subir</button>
+            <span>Paraguay</span>
+            <button class="bajar">Bajar</button>
+        </li>
+    </ol>
+
+    <script>
+        const subirBotones = document.querySelectorAll('.subir');
+        const bajarBotones = document.querySelectorAll('.bajar');
+        const items = document.querySelectorAll('li');
+    
+        bajarBotones.forEach((boton, index) => {
+            boton.addEventListener('click', () => {
+                if (index < items.length - 1) {
+                    items[index].parentNode.insertBefore(items[index + 1], items[index]);
+                }
+            });
+        });
+    
+        subirBotones.forEach((boton, index) => {
+            boton.addEventListener('click', () => {
+                if (index > 0) {
+                    items[index].parentNode.insetBefore(items[index], items[index - 1]);
+                }
+            });
+        });
+    </script>
+</body>
+</html>    

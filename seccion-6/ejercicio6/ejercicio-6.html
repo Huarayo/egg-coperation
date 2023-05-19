@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    const personas = 
+    [
+        {
+            nombre:"holamundo",
+            edad:10,
+            ciudad:"mendoza"
+        },
+        {
+            nombre:"Leonardo",
+            edad:20,
+            ciudad:"buenos aires"
+        },
+        {
+            nombre:" 张",
+            edad:30,
+            ciudad:"china"
+        }
+    ];
+
+    function crearMensajesDePresentacion() {
+        const mensajes = [];
+
+        personas.forEach(el => {
+            mensajes.push(el.nombre,el.edad,el.ciudad);
+        });
+
+        return mensajes
+    }  
+
+    let resultados = crearMensajesDePresentacion();
+
+    console.log(resultados)
+    
+    for(let i = 0; i < personas.length; i++) {
+
+        let nombre = resultados[i*3];
+        let edad = resultados[i*3+1];
+        let ciudad = resultados[i*3+2];
+
+        let cartilla = `Mi nombre es ${nombre}, tengo ${edad} años y vivo en ${ciudad}`;
+        
+        console.log(cartilla);
+    }
+    // console.log(crearMensajesDePresentacion())
+
+</script>
+</body>
+</html>
